@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+    background-color: inherit;
+    color: white;
+
+}
+
+#contact{
+    display: none;
+}
+
+.menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: red;
+}
+
+.active{
+    color: red;
+}
+
+body{
+    background-color: rgb(27, 27, 27);
+}
+
+.image{
+    height: 450px;
+    width: 450px;
+    background-color: red;
+    border-radius: 50%;
+    background: url(./Assets/Image/IMG_20220515_141010_040.jpg);
+    background-size: cover;
+    
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.media{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding-top: 30px;
+}
+
+.media li{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.media li:hover{
+    background-color: rgb(91, 91, 218);
+}
+
+.media li a{
+    color: white;
+}
+
+h1{
+    font-size: 35px;
+    color: transparent;
+    -webkit-text-stroke: 0.7px blue;
+}
+
+h2,h4{
+    font-size: 40px;
+    color: white;
+}
+
+h3{
+    font-size: 30px;
+    color: rgb(162, 162, 247);
+    padding-bottom: 15px;
+}
+
+p{
+    color: white;
+    font-size: 17px;
+}
+
+.content{
+    width: 50%;
+}
+
+span{
+    color: red;
+}
+
+.dbtn{
+    padding: 10px 13px;
+    background-color: aqua;
+    border: 0;
+    border-radius: 8px;
+    font-size: 15px;
+    background-image: linear-gradient(red, red);
+    background-repeat: no-repeat;
+    /* -webkit-background-clip: padding-box; */
+    background-position: -300px 0;
+    animation: animateText 3s linear infinite;
+
+}
+
+@keyframes animateText{
+    0%,95%,
+    100% {
+        background-position: -300px 0;
+    }
+    65%,
+    85%{
+        background-position: 0 0;
+    }
+}
+
+.dbtn:hover{
+    margin: 1px;
+    cursor: pointer;
+}
+
+.skills{
+    display: flex;
+    gap: 10px;
+}
+
+.skills div{
+    padding: 10px;
+    background-color: rgb(124, 118, 118);
+    font-size: 20px;
+}
+
+.bn{
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.prj{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 60px;
+}
+
+.passprj{
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.link{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.link p{
+    font-size: 30px;
+}
+
+.linkbtn{
+    padding: 10px 13px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.linkbtn a{
+    color: black;
+}
+
+.linkbtn:hover, .linkbtn a:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+a img{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.dwnl{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    padding: 0 10%;
+    padding-bottom: 20px;
+    /* line-height: 50px; */
+}
+
+@media screen and (max-width: 1000px) {
+    .menu{
+        flex-direction: column;
+        line-height: 40px;
+        align-items: end;
+
+    }
+    
+    #btn{
+        display: none;
+    }
+
+    main{
+        flex-direction: column;
+        gap: 20px;
+        height: 90vh;
+    }
+
+    #media{
+        display: none;
+    }
+
+    #contact{
+        display: flex;
+        justify-content: center;
+    }
+
+    .media{
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .content{
+        width: 80%;
+        line-height: 40px;
+    }
+
+    .bn, .passprj{
+        padding-top: 40px;
+    }
+
+    .image{
+        width: 300px;
+        height: 300px;
+    }
+}
