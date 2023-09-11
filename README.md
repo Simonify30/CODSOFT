@@ -1,1 +1,1 @@
-https://simonify30.github.io/CODSOFT/
+https://simonify30.github.io/CODSOFT/Calculator
